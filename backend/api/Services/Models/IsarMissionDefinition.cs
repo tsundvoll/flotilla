@@ -90,7 +90,7 @@ namespace Api.Services.Models
 
         public IsarInspectionDefinition(Inspection inspection, MissionRun missionRun)
         {
-            Id = inspection.Id;
+            Id = inspection.IsarInspectionId;
             Type = inspection.InspectionType.ToString();
             InspectionTarget = inspection.InspectionTarget != null ? new IsarPosition(
                 inspection.InspectionTarget.X,
